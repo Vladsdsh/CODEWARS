@@ -14,3 +14,8 @@ def correct(s):
         '1':  'I'
     }
     return ''.join(verif.get(char, char) for char in s)
+
+#refactor
+
+def correct(string):
+    return string.replace('1','I').replace('0','O').replace('5','S')
