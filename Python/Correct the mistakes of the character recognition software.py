@@ -6,3 +6,11 @@
 # O is misinterpreted as 0
 # I is misinterpreted as 1
 # The test cases contain numbers only by mistake.
+
+def correct(s):
+    verif={
+        '5': 'S',
+        '0': 'O',
+        '1':  'I'
+    }
+    return ''.join(verif.get(char, char) for char in s)
