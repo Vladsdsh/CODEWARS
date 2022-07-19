@@ -13,6 +13,8 @@ FROM OPPOSITE
 
 Select -number AS res FROM opposite
 
+-- refactor
+
 select -number res from opposite
 
 
