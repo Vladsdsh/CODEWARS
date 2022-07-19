@@ -8,3 +8,11 @@ You will be given a table: opposite, with a column: number. Return a table with 
 SELECT
   NUMBER * (-1) AS res
 FROM OPPOSITE
+
+-- refactor 
+
+Select -number AS res FROM opposite
+
+select -number res from opposite
+
+
