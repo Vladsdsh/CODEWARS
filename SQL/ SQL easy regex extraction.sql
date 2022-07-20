@@ -11,3 +11,5 @@ Austin Gaylord	Hola que tal #4702665	4702665
 Kacie Zulauf	Bienvenido 45454545 tal #470815 BD. WA470815	470815
 NOTE: To keep it simple assume that the iser_id will be having varchar type */
 
+SELECT name, greeting, replace(substring(greeting, '#[\d]+'), '#', '') as user_id
+FROM greetings;
