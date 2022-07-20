@@ -13,3 +13,11 @@ NOTE: To keep it simple assume that the iser_id will be having varchar type */
 
 SELECT name, greeting, replace(substring(greeting, '#[\d]+'), '#', '') as user_id
 FROM greetings;
+
+-- refactor
+
+SELECT
+  name,
+  greeting,
+  SUBSTRING(greeting FROM '#([0-9]+)') AS user_id
+FROM greetings;
