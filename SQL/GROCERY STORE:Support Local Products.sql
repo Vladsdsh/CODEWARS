@@ -25,3 +25,7 @@ FROM products
 WHERE country IN ('United States of America', 'Canada')
 GROUP BY country
 ORDER BY 1 DESC;
+
+
+SELECT name, greeting, SUBSTRING(greeting, LOCATE('#', greeting) + 1, LENGHT(greeting))
+FROM greetings;
