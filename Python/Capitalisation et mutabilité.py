@@ -9,3 +9,6 @@ def capitalize_word(word):
     return word[0:1].upper() + word[1:]
 
 # refactor
+
+def capitalize_word(word):
+    return word.capitalize()
