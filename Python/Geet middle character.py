@@ -18,3 +18,14 @@
 
 #The middle character(s) of the word represented as a string.
 
+def get_middle(s):
+    odd_even = ''
+    if len(s)%2 == 0:
+        odd_even = 'even'
+    else:
+        odd_even = 'odd'
+    
+    if(odd_even == 'odd'):
+        return s[len(s)//2]
+    else:
+        return s[(len(s)//2)-1] + s[len(s)//2]
