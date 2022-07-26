@@ -30,8 +30,13 @@ def get_middle(s):
     else:
         return s[(len(s)//2)-1] + s[len(s)//2]
 
-#refactor
+#refactor 1
 
 def get_middle(s):
     odd_even = "even" if len(s)%2 == 0 else "odd"
     return s[len(s)//2] if (odd_even == 'odd') else s[(len(s)//2)-1] + s[len(s)//2]
+
+# refactor 2
+
+def get_middle(s):
+    return s[len(s)//2] if (len(s)%2 == 1) else s[(len(s)//2)-1] + s[len(s)//2]
