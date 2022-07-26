@@ -29,3 +29,9 @@ def get_middle(s):
         return s[len(s)//2]
     else:
         return s[(len(s)//2)-1] + s[len(s)//2]
+
+#refactor
+
+def get_middle(s):
+    odd_even = "even" if len(s)%2 == 0 else "odd"
+    return s[len(s)//2] if (odd_even == 'odd') else s[(len(s)//2)-1] + s[len(s)//2]
