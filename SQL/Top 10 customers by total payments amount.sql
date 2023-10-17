@@ -33,3 +33,22 @@ WITH TopCustomers AS (
 )
 
 SELECT * FROM TopCustomers
+
+
+-- Solution 2 : not used with 
+
+SELECT 
+    c.customer_id,
+    c.email,
+    COUNT(p.payment_id) AS paiements_count,
+    CAST(SUM(p.amount) AS FLOAT) AS total_amount
+FROM 
+    customer c
+JOIN 
+    payment p ON c.customer_id = p.customer_id
+GROUP BY 
+    c.customer_id, c.email
+ORDER BY 
+    montant_total DESC
+LIMIT 
+    10
