@@ -1,5 +1,3 @@
-import math
-
 class rectangle:
     def __init__(self, longueur, largeur):
         self.longueur = longueur 
