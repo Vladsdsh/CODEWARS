@@ -22,6 +22,7 @@ etudiant1 = Etudiant("Bertran", 19)
 etudiant1.ajouter_note()
 etudiant1.ajouter_note()
 etudiant1.ajouter_note()
+etudiant1.ajouter_note()
 
 # Calculez la moyenne des notes de l'étudiant et affichez-la
 print(etudiant1.moyenne())
