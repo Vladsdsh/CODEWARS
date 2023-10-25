@@ -21,9 +21,9 @@ class CompteBancaire:
 banque = CompteBancaire("Sisoko", 100)
 
 # Effectuez un retrait
-montant_retrait = float(input("Entrez le montant à retirer : "))
+montant_retrait = float(input("Entrez le montant à retirer du compte : "))
 print(banque.retirer(montant_retrait))
 
 # Effectuez un dépôt
-montant_depot = float(input("Entrez le montant à déposer : "))
+montant_depot = float(input("Entrez le montant à déposer du compte : "))
 print(banque.deposer(montant_depot))
